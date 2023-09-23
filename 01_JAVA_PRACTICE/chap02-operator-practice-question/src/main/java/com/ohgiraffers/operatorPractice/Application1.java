@@ -18,7 +18,7 @@ public class Application1 {
 
         System.out.println("========== 답 =========");
         int inum1 = 9;
-        int inum2 = inum1 / 2;
+        int inum2 = inum1 % 2;
         String result1 = (inum2 == 0)? "짝수" : "홀수";
         System.out.println("정수 "+ inum1 + " : " + result1);
 
