@@ -14,6 +14,8 @@ public class Application2 {
          * 청소년
          * */
 
+
+        System.out.println("========답=======");
         int num1 = 19;
         String result1 =(num1 <= 13)? "어린이": (num1 > 19)? "성인": "청소년";
         System.out.printf(num1 + "세는 : " + result1);
