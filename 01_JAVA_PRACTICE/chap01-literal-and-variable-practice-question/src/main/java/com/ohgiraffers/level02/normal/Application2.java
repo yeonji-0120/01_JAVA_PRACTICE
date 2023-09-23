@@ -12,6 +12,8 @@ public class Application2 {
          * 평균 : 67
          *  */
 
+        System.out.println("======== 답 =========");
+
         double korean = 80.5;
         double math = 50.6;
         double eng = 70.8;

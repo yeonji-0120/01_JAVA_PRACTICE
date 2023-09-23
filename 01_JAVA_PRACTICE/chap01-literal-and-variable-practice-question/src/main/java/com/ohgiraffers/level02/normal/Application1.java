@@ -11,6 +11,8 @@ public class Application1 {
          * 문자 a의 unicode : 97
          * */
 
+        System.out.println("======== 답 =========");
+
         char ch1 = 'a';
         int charNum = ch1;
 

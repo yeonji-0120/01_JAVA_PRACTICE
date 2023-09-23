@@ -13,6 +13,8 @@ public class Application2 {
          * 둘레 : 97.8
          *  */
 
+        System.out.println("======== 답 =========");
+
         double width = 12.5;
         double height = 36.4;
 
