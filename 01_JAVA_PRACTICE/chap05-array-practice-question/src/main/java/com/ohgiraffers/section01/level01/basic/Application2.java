@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.level01.basic;
 
+import java.util.Scanner;
+
 public class Application2 {
 
     public static void main(String[] args) {
@@ -24,7 +26,14 @@ public class Application2 {
          * 준비된 과일이 없습니다.
          * */
 
-        String fruit[] = {"딸기", "바나나", "복숭아", "키위", "사과"};
-
+        String[] arr = {"딸기", "바나나", "복숭아", "키위", "사과"};
+        Scanner sc = new Scanner(System.in);
+        System.out.print("0부터 4까지의 정수를 입력하세요 : ");
+        int a = sc.nextInt();
+        if(0>a || a>=5){
+            System.out.print("준비된 과일이 없습니다.");
+        }else{
+            System.out.print(arr[a]);
+        }
     }
 }

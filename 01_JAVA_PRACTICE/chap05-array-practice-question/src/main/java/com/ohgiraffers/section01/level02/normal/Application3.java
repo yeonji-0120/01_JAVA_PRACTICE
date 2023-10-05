@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.level02.normal;
 
+import java.util.Scanner;
+
 public class Application3 {
 
     public static void main(String[] args) {
@@ -26,5 +28,24 @@ public class Application3 {
         // 5을 입력 받으면 1 2 3 2 1     -> 3
         // 7을 입력 받으면 1 2 3 4 3 2 1   -> 4
         // 9을 입력 받으면 1 2 3 4 5 4 3 2 1  -> 5
+
+        Scanner sc = new Scanner(System.in);
+        int num1 = sc.nextInt();
+        int arr[] = new int[num1];
+        int max = (num1 / 2)+1;
+
+
+        if(num1 % 2 == 0 || num1 < 0){
+            System.out.print("양수 혹은 홀수만 입력해야 합니다.");
+        }else{
+            for(int i = 0; i < max; i++){
+                System.out.print(arr[i]);
+            }
+            for(int j = max; j ==0; j-- ){
+                System.out.print(arr[j]);
+            }
+
+        }
+
     }
 }
