@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.level02.normal;
 
+import java.util.Scanner;
+
 public class Application2 {
 
     public static void main(String[] args) {
@@ -14,5 +16,22 @@ public class Application2 {
          * 990101-1******
          */
 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("주민등록번호를 입력하세요 : ");
+        String num1 = sc.nextLine();
+
+        char arr[] = new char[14];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = num1.charAt(i);
+                }
+
+        for(int i = 8; i < arr.length; i++){
+            arr[i] = '*';}
+
+
+            for (int j = 0; j < arr.length; j++) {
+                System.out.print(arr[j]);
+            }
+
+        }
     }
-}

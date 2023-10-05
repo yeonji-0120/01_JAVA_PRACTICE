@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.level02.normal;
 
+import java.util.Scanner;
+
 public class Application6 {
 
     public static void main(String[] args) {
@@ -14,6 +16,17 @@ public class Application6 {
          * 치킨 이름을 입력하세요 : 양념     치킨 이름을 입력하세요 : 불닭
          * 양념치킨 배달 가능              불닭치킨은 없는 메뉴입니다.
          * */
+        String[] ch = {"페리카나", "교촌", "비비큐", "BBQ", "bbq", "멕시카나", "처갓집", "양념", "간장", "후라이드" };
 
-    }
-}
+        Scanner sc = new Scanner(System.in);
+        System.out.print("치킨 이름을 입력하세요 : ");
+        String a = sc.next();
+
+
+
+        }
+
+            }
+
+
+

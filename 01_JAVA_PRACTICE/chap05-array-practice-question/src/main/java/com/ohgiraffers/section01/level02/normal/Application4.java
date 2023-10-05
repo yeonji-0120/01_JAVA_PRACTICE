@@ -10,5 +10,22 @@ public class Application4 {
 
 		  Random 클래스 사용 혹은 Math.random() 메소드를 사용
 	   */
+
+        int a = (int)(Math.random()*45)+1;
+        int b = (int)(Math.random()*45)+1;
+        int c = (int)(Math.random()*45)+1;
+        int d = (int)(Math.random()*45)+1;
+        int e = (int)(Math.random()*45)+1;
+        int f = (int)(Math.random()*45)+1;
+
+
+
+        System.out.println(a + " ");
+        System.out.println(b + " ");
+        System.out.println(c + " ");
+        System.out.println(d + " ");
+        System.out.println(e + " ");
+        System.out.println(f + " ");
+
     }
 }
