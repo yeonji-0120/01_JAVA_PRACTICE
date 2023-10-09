@@ -21,11 +21,11 @@ public class Application2 {
         String num1 = sc.nextLine();
 
         char arr[] = new char[14];
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {      //입력 받은 정수를 char로 선언한 arr배열에 arr[0]부터 순서대로 값 입력
             arr[i] = num1.charAt(i);
                 }
 
-        for(int i = 8; i < arr.length; i++){
+        for(int i = 8; i < arr.length; i++){        //arr배열 arr[8]부터 * 값으로 입력
             arr[i] = '*';}
 
 

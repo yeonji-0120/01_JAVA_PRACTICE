@@ -20,5 +20,10 @@ public class Application1 {
         arr[8] = 9;
         arr[9] = 10;
 
+        for(int i = 0; i < arr.length; i++){
+            System.out.print("arr[" + i + "] = " + arr[i]);
+            System.out.println();
+        }
+
     }
 }

@@ -33,5 +33,44 @@ public class Application2 {
          * 김정희 대조영
          * 김유신 이사부
          */
+        String[] name = {"홍길동", "이순신", "유관순", "윤봉길", "장영실", "임꺽정", "장보고", "이태백", "김정희", "대조영", "김유신", "이사부"};
+        String[][] division1 = new String[3][2];
+        String[][] division2 = new String[3][2];
+
+
+        System.out.println("== 1분단 ==");
+        int k = 0;
+        for (int i = 0; i < division1.length; i++) {
+            for (int j = 0; j < division1[i].length; j++) {
+                division1[i][j] = name[k];
+                k++;
+            }
+        }
+
+        for (int i = 0; i < division1.length; i++) {                      //출력문
+            for (int j = 0; j < division1[i].length; j++) {
+                System.out.print(division1[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.println("===2분단===");
+        int l = 6;
+        for (int i = 0; i < division2.length; i++) {
+            for (int j = 0; j < division2[i].length; j++) {
+                division2[i][j] = name[l];
+                l++;
+            }
+        }
+
+        for (int i = 0; i < division2.length; i++) {                      //출력문
+            for (int j = 0; j < division2[i].length; j++) {
+                System.out.print(division2[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+
     }
 }

@@ -14,5 +14,29 @@ public class Application7 {
          * 최대값 : 10
          * 최소값 : 2
          * */
+
+        int[] num1 = new int[10];
+
+        for (int i = 0; i < num1.length; i++) {       //iarr 배열에 Math.random() 메소드 이용, 1~45번 난수 값 대입
+            num1[i] = (int) (Math.random() * 10) + 1;
+        }
+
+        for (int i = 1; i < num1.length; i++) {     // 순차정렬을 이용해 오름차순으로 정렬
+            for (int j = 0; j < i; j++) {
+                if (num1[i] < num1[j]) {
+                    int temp;
+                    temp = num1[i];
+                    num1[i] = num1[j];
+                    num1[j] = temp;
+                }
+            }
+        }
+
+        for (int i = 0; i < num1.length; i++) {
+            System.out.print(num1[i] + " ");
+        }
+        System.out.println();
+        System.out.println("최대값 : " + num1[9]);
+        System.out.println("최소값 : " + num1[0]);
     }
 }

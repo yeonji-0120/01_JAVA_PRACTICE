@@ -30,7 +30,7 @@ public class Application3 {
         // 9을 입력 받으면 1 2 3 4 5 4 3 2 1  -> 5
 
         Scanner sc = new Scanner(System.in);
-<<<<<<< HEAD
+
         System.out.print("홀수인 양의 정수를 입력하세요 : ");
         int num1 = sc.nextInt();    //정수 입력받기
         int arr[] = new int[num1];  //입력 받은 정수가 길이인 배열 생성
@@ -56,22 +56,6 @@ public class Application3 {
 
 
 
-=======
-        int num1 = sc.nextInt();
-        int arr[] = new int[num1];
-        int max = (num1 / 2)+1;
-
-
-        if(num1 % 2 == 0 || num1 < 0){
-            System.out.print("양수 혹은 홀수만 입력해야 합니다.");
-        }else{
-            for(int i = 0; i < max; i++){
-                System.out.print(arr[i]);
-            }
-            for(int j = max; j ==0; j-- ){
-                System.out.print(arr[j]);
-            }
->>>>>>> origin/main
 
         }
 
