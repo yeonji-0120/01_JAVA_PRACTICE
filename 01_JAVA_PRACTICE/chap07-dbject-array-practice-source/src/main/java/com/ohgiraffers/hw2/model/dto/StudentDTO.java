@@ -69,6 +69,11 @@ public class StudentDTO {
     }
 
     public String information(){
-        return this.grade + this.classroom + this.name + this.kor + this.eng + this.math;
+        return "학년 : " + this.grade +
+                ", 반 : " + this.classroom +
+                ", 이름 : " + this.name +
+                ", 국어점수 : " + this.kor +
+                ", 영어점수 : " + this.eng +
+                ", 수학점수 : " + this.math;
     }
 }

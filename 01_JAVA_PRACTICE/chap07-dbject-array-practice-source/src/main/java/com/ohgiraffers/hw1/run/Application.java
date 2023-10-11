@@ -16,10 +16,26 @@ public class Application {
         }
         System.out.println("===========================================================");
 
-        employeeDTO[0] = new EmployeeDTO(0, "김말똥", "영업부", "팀장", 30, 'M', 3000000, 0.2, "01055559999", "전라도 광주");
-        employeeDTO[1] = new EmployeeDTO(1, "홍길동", "기획부", "부장", 19, 'M', 4000000, 0.3, "01022223333","서울 잠실" );
+        employeeDTO[0].setEmpNo(0);
+        employeeDTO[0].setEmpName("김말똥");
+        employeeDTO[0].setDept("영업부");
+        employeeDTO[0].setJob("팀장");
+        employeeDTO[0].setAge(30);
+        employeeDTO[0].setGender('M');
+        employeeDTO[0].setSalary(3000000);
+        employeeDTO[0].setBonusPoint(0.2);
+        employeeDTO[0].setPhone("01055559999");
+        employeeDTO[0].setAddress("전라도 광주");
 
-        System.out.println("===========================================================");
+
+        employeeDTO[1].setDept("기획부");
+        employeeDTO[1].setJob("부장");
+        employeeDTO[1].setSalary(4000000);
+        employeeDTO[1].setBonusPoint(0.3);
+        employeeDTO[1].setPhone("01022223333");
+        employeeDTO[1].setAddress("서울 잠실");
+
+
 
         for(int i = 0; i < 2; i++){
             System.out.println("emp[" + i + "] : "+ employeeDTO[i].information());
