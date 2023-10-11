@@ -9,26 +9,11 @@ public class Application {
         Scanner sc = new Scanner(System.in);
         StudentDTO studentDTO[] = new StudentDTO[10];
 
-        StudentDTO studentDTO1 = new StudentDTO();
-        StudentDTO studentDTO2 = new StudentDTO();
-        StudentDTO studentDTO3 = new StudentDTO();
-        StudentDTO studentDTO4 = new StudentDTO();
-        StudentDTO studentDTO5 = new StudentDTO();
-        StudentDTO studentDTO6 = new StudentDTO();
-        StudentDTO studentDTO7 = new StudentDTO();
-        StudentDTO studentDTO8 = new StudentDTO();
-        StudentDTO studentDTO9 = new StudentDTO();
-        StudentDTO studentDTO10 = new StudentDTO();
-        studentDTO[0] = studentDTO1;
-        studentDTO[1] = studentDTO2;
-        studentDTO[2] = studentDTO3;
-        studentDTO[3] = studentDTO4;
-        studentDTO[4] = studentDTO5;
-        studentDTO[5] = studentDTO6;
-        studentDTO[6] = studentDTO7;
-        studentDTO[7] = studentDTO8;
-        studentDTO[8] = studentDTO9;
-        studentDTO[9] = studentDTO10;
+        for(int i= 0; i < studentDTO.length; i++){
+            StudentDTO studentDTOi = new StudentDTO();
+            studentDTO[i] = studentDTOi;
+        }
+
 
         boolean c = true;
 
