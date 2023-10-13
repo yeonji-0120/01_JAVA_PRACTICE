@@ -7,8 +7,9 @@ public class Student extends Person {
     public Student() {
     }
 
-    public Student(int age, double height, double weight, int grade, String major) {
+    public Student(String name, int age, double height, double weight, int grade, String major) {
         super(age, height, weight);
+        super.name=name;
         this.grade = grade;
         this.major = major;
     }
@@ -29,13 +30,10 @@ public class Student extends Person {
         this.major = major;
     }
 
-    @Override
-    public String getName() {
-        return super.getName();
-    }
 
     @Override
-    public void setName(String name) {
-        super.setName(name);
+    public String information() {
+        return super.information()+
+                +grade + major;
     }
 }

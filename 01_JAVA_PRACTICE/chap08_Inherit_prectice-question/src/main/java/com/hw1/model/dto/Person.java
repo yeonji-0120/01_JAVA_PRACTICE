@@ -49,11 +49,9 @@ public class Person {
 
 
     public String information() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", height=" + height +
-                ", weight=" + weight +
-                '}';
+        return "이름 : " + name +
+                ", 나이 : " + age +
+                ", 신장 : " + height +
+                ", 몸무게 : " + weight ;
     }
 }

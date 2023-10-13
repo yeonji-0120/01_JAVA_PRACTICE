@@ -7,8 +7,10 @@ public class Employee extends Person {
     public Employee() {
     }
 
-    public Employee(int age, double height, double weight) {
+    public Employee(String name, int age, double height, double weight) {
         super(age, height, weight);
+        super.name = name;
+
     }
 
     @Override
@@ -35,5 +37,10 @@ public class Employee extends Person {
 
     public void setDept(String dept) {
         this.dept = dept;
+    }
+
+    @Override
+    public String information() {
+        return super.information();
     }
 }
