@@ -18,7 +18,7 @@ public class Run {
 
         for (Student a : student0) {
             System.out.println(a.information());
-   
+
         }
 
         Employee emp = new Employee();
