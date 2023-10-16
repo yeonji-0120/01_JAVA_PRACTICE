@@ -13,7 +13,6 @@ public class BookManager {
 
     public void addBook(BookDTO book) {
         bookList.add(new BookDTO(book.getbNo(), book.getCategory(), book.getTitle(), book.getAuthor()));
-        System.out.println(bookList.size());
 
     }
 
@@ -53,7 +52,7 @@ public class BookManager {
                     System.out.println(book);
                 }
         }
-        return 
+        return bookList;
     }
 
     public void printBookList(List<BookDTO> printList) {
