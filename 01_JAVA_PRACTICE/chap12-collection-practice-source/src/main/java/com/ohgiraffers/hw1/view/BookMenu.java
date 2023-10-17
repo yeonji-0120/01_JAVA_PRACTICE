@@ -9,20 +9,22 @@ import java.util.Scanner;
 public class BookMenu {
     Scanner sc = new Scanner(System.in);
     private BookManager bm = new BookManager();
+    int bNo = 0;
     public void mainMenu(){
         while (true) {
             System.out.println("*** 도서 관리 프로그램 ***");
             System.out.println("1. 새 도서 추가");
             System.out.println("2. 도서정보 정렬 후 출력");
-            System.out.println("3. 도서 찾기");
+            System.out.println("3. 도서 삭제");
             System.out.println("4. 도서 검색출력");
             System.out.println("5. 전체 출력");
             System.out.println("6. 끝내기");
             int a = sc.nextInt();
-
+            sc.nextLine();
             switch (a) {
                 case 1:
                     bm.addBook(inputBook());
+                    bNo++;
                     break;
                 case 2:
                     bm.printBookList(selectSortedBook());
@@ -44,7 +46,7 @@ public class BookMenu {
 
     public BookDTO inputBook(){
         BookDTO bookDTO = new BookDTO();
-        int bNo = 0;
+
         System.out.print("도서 제목 : ");
         String title = sc.next();
         sc.nextLine();
@@ -53,7 +55,6 @@ public class BookMenu {
         int category = sc.nextInt();
         System.out.print("도서 저자 : ");
         String author = sc.next();
-        bNo++;
         BookDTO book = new BookDTO(bNo, category, title, author);
 
         return book;
@@ -61,15 +62,14 @@ public class BookMenu {
 
     public int inputBookNo(){
         System.out.println("삭제할 도서 번호");
-        System.out.print("(1 : 인문 / 2 : 자연과학 / 3 : 의료 / 4 : 기타)");
-        int index = sc.nextInt();
-        return index;
+        int key = sc.nextInt();
+        return key;
     }
 
     public String inputBookTitle(){
         System.out.print("검색할 도서 제목 : ");
-        String search = sc.nextLine();
-        return search;
+        String title = sc.nextLine();
+        return title;
     }
 
     public List<BookDTO> selectSortedBook(){

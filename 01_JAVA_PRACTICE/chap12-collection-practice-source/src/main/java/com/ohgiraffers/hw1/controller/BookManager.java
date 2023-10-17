@@ -8,24 +8,34 @@ import com.ohgiraffers.hw1.model.dto.BookDTO;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class BookManager {
     List<BookDTO> bookList = new ArrayList<>();
 
     public void addBook(BookDTO book) {
         bookList.add(new BookDTO(book.getbNo(), book.getCategory(), book.getTitle(), book.getAuthor()));
 
+        System.out.println(bookList);
     }
 
     public void deleteBook(int key) {
         bookList.remove(key);
+        System.out.println(bookList);
+
+
     }
 
     public String searchBook(String title) {
-    int num4 = bookList.indexOf(title);
-    String x = "x";
-    return x;
+        if(bookList.contains(title) == true){
+            System.out.println("dlt엉");
+        }else{
+            System.out.println("없엉");
 
+        }
+        return title;
     }
+
 
     public void displayAll() {
         System.out.println(bookList);
