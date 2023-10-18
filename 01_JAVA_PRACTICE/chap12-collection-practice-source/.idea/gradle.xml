@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="GradleMigrationSettings" migrationVersion="1" />
 =======
 >>>>>>> 889fb79ad312b6e7759258253feda777ecfcb966
+=======
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+>>>>>>> c41cd02eb60f05eb98bee455bc2926ae58be3f49
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
